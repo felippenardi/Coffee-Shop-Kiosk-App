@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Welcome to Foundation</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="four columns centered">
+      <div id="dashboard" class="four columns">
+        <ul class="block-grid two-up">
+          <li><h4 class="subheader">Saldo</h4> <h3>R$ 17,50</h3></li>
+          <li><h4 class="subheader">Bebido</h4> <h3>0,9 L</h3></li>
+        </ul>
+      </div>
+      <div id="search" class="four columns">
+        <input type="" />
+      </div>
+      <div id="items" class="four columns">
+        <ul class="block-grid five-up">
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+          <li>item 6</li>
+          <li>item 7</li>
+          <li>item 8</li>
+          <li>item 9</li>
+          <li>item 10</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+	<!-- Included JS Files (Uncompressed) -->
+	<!--
+	<script src="jquery.js"></script>
+  <script src="javascripts/foundation/modernizr.foundation.js"></script>
+  <script src="javascripts/foundation/jquery.placeholder.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+  <script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+  -->
+
+	<!-- Included JS Files (Compressed) -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+
+	<!-- Application Javascript, safe to override -->
+	<script src="javascripts/app.js"></script>
+
+
+</body>
+</html>
