@@ -1,4 +1,5 @@
 // You custom settings file to override Foundation defaults
+
 @import "settings";
 
 // Comment out this import if you are customizing you imports below
@@ -44,6 +45,48 @@
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
 
+.centerit { text-align:center; }
+
+#products {
+  li {
+    padding:10px;
+    position: relative;
+    &:first-child {
+      margin-left: -1px;
+    }
+    &[data-quantity] {
+      &:after {
+        content:attr(data-quantity);
+        position:absolute;
+        top:0;
+        right:0;
+        display:block;
+        background:red;
+        @include border-radius(200px);
+        padding:1px 8px;
+        color:white;
+      }
+    }
+    a {
+      position:relative;
+      height:70px;
+      //&:before {
+      //  content: "";
+      //  font-size: 44px;
+      //  display: block;
+      //  margin-bottom:10px;
+      //}
+      &:after {
+        content: "R$ 4";
+        display:block;
+        font-size:10px;
+        position:absolute;
+        bottom:4px;
+      }
+    }
+  }
+}
+
 #upPanel {
   #balance {
   }
@@ -55,6 +98,6 @@
 #search {
 }
 
-.row { border:1px solid black;}
-.columns { border:1px solid black;}
+//.row { border:2px solid black;}
+//.columns { border:1px solid black;}
 
